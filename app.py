@@ -24,7 +24,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.header('READMEND')
+st.header('READMEND SAATHI')
 movies = pickle.load(open('model/movie_list.pkl','rb'))
 similarity = pickle.load(open('model/similarity.pkl','rb'))
 
@@ -53,6 +53,11 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
+
+
+
+
+
 
 
 
